@@ -13,7 +13,7 @@ service sub$i restart
 sleep 30s
 echo "第'$i'个完成"
 done
-sleep 300m
+sleep 1440m
 echo "'$j'lun"
-j=`expr j + 1`
+j=`expr $j + 1`
 done
