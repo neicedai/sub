@@ -3,7 +3,7 @@ while true
 do
 addr=`cat /wallet/$j |grep Address|awk '{print $3 }'`
 echo $addr
-for ((i=1;i<=30;i++)) do
+for ((i=1;i<=1;i++)) do
 cp /etc/systemd/system/sub.service /etc/systemd/system/sub$i.service 
 sed -i 's#btfsl#'$i'#g' /etc/systemd/system/sub$i.service 
 sed -i 's#tihuan#'$i'#g' /etc/systemd/system/sub$i.service 
