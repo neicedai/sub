@@ -9,6 +9,6 @@ chmod +x node farmer
 #mkdir /wallet
 #for ((i=1;i<=1000;i++)) do
 #./node key generate -n subspace_testnet >> /wallet/$i
-service noderun start
-systemctl enable noderun
-journalctl -u noderun
+service subnode start
+systemctl enable subnode
+journalctl -u subnode
