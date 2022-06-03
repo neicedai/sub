@@ -1,25 +1,8 @@
-cp sub.service /etc/systemd/system
-cd /usr/local/bin
-wget https://github.com/subspace/subspace/releases/download/snapshot-2022-mar-09/subspace-node-ubuntu-x86_64-snapshot-2022-mar-09
-mv subspace-node-ubuntu-x86_64-snapshot-2022-mar-09 node
-wget https://github.com/subspace/subspace/releases/download/snapshot-2022-mar-09/subspace-farmer-ubuntu-x86_64-snapshot-2022-mar-09
-mv subspace-farmer-ubuntu-x86_64-snapshot-2022-mar-09 farmer
-chmod +x node.sh farmer.sh node farmer
-mkdir /wallet
-for ((i=1;i<=1000;i++)) do
-./node key generate -n subspace_testnet >> /wallet/$i
-echo "$i"
-done
-nohup ./node \
-  --chain testnet \
-  --wasm-execution compiled \
-  --execution wasm \
-  --bootnodes "/dns/farm-rpc.subspace.network/tcp/30333/p2p/12D3KooWPjMZuSYj35ehced2MTJFf95upwpHKgKUrFRfHwohzJXr" \
-  --rpc-cors all \
-  --rpc-methods unsafe \
-  --ws-external \
-  --validator \
-  --telemetry-url "wss://telemetry.polkadot.io/submit/ 1" \
-  --telemetry-url "wss://telemetry.subspace.network/submit 1" \
-  --name wdc \
-  > node.log 2>&1 &
+wget https://github.com/subspace/subspace/releases/download/gemini-1b-2022-june-02/subspace-node-ubuntu-x86_64-gemini-1b-2022-june-02
+mv subspace-node-ubuntu-x86_64-gemini-1b-2022-june-02 node
+wget https://github.com/subspace/subspace/releases/download/gemini-1b-2022-june-02/subspace-farmer-ubuntu-x86_64-gemini-1b-2022-june-02
+mv subspace-farmer-ubuntu-x86_64-gemini-1b-2022-june-02 farmer
+chmod +x node farmer
+#mkdir /wallet
+#for ((i=1;i<=1000;i++)) do
+#./node key generate -n subspace_testnet >> /wallet/$i
