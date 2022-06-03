@@ -4,7 +4,7 @@ Description=sub
 [Service]
 User=root
 #Environment=BTFS_PATH=/btfs/btfsl/.btfs
-ExecStart=farmer farm --reward-address wallet --custom-path /data/btfsl/11  --ws-server-listen-addr 127.0.0.1:200tihuan
+ExecStart=farmrun
 #KillSignal=SIGINT # gracefully kill the process when stopping the service. Allows node to unregister cleanly.
 Restart=always
 RestartSec=10
