@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /home/sub
 ./node \
   --chain gemini-1 \
