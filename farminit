@@ -3,6 +3,6 @@ sed -i 's#daxiao#'$2'#g' farmrun
 chmod 777 farmrun
 cp farmrun /usr/local/bin/
 cp subfarm.service /etc/systemd/system/
-service garmrun start
+service farmrun start
 systemctl enable farmrun
 journalctl -u farmrun
