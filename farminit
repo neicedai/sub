@@ -1,7 +1,7 @@
 sed -i 's#wallet#'$1'#g' farmrun
 sed -i 's#daxiao#'$2'#g' farmrun
 chmod 777 farmrun
-cp farmun /usr/local/bin/
+cp farmrun /usr/local/bin/
 cp subfarm.service /etc/systemd/system/
 service garmrun start
 systemctl enable farmrun
