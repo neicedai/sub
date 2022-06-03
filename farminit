@@ -1,0 +1,8 @@
+i=$1
+sed -i 's#tihuan#'$i'#g' farmrun
+chmod 777 farmrun
+cp farmun /usr/local/bin/
+cp subfarm.service /etc/systemd/system/
+service garmrun start
+systemctl enable farmrun
+journalctl -u farmrun
