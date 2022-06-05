@@ -8,7 +8,7 @@ mv subspace-farmer-ubuntu-x86_64-gemini-1b-2022-june-03 farm
 chmod +x node farm
 #mkdir /wallet
 #for ((i=1;i<=1000;i++)) do
-#./node key generate -n subspace_testnet >> /wallet/$i
+./node key generate -n subspace_testnet >> 1
 service subnode start
 systemctl enable subnode
 journalctl -u subnode
