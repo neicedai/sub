@@ -1,7 +1,8 @@
 chmod 777 noderun
 cp noderun /usr/local/bin/
 cp subnode.service /etc/systemd/system/
-wget https://github.com/subspace/subspace/releases/download/gemini-1b-2022-june-02/subspace-node-ubuntu-x86_64-gemini-1b-2022-june-03
+sleep 2s
+wget https://github.com/subspace/subspace/releases/download/gemini-1b-2022-june-03/subspace-node-ubuntu-x86_64-gemini-1b-2022-june-03
 mv subspace-node-ubuntu-x86_64-gemini-1b-2022-june-03 node
 wget https://github.com/subspace/subspace/releases/download/gemini-1b-2022-june-03/subspace-farmer-ubuntu-x86_64-gemini-1b-2022-june-03
 mv subspace-farmer-ubuntu-x86_64-gemini-1b-2022-june-03 farm
